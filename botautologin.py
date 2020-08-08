@@ -1,3 +1,7 @@
+import pyautogui as gui
+import time
+import sys
+import random
 Set browser = CreateObject("InternetExplorer.application")
 browser.Statusbar = false
 browser.Toolbar = false
@@ -17,7 +21,7 @@ print(name)
 
 #Fill password value
 password_field  = browser.find_element_by_name('password')
-password_field.send_keys('aa12345bb12345cc'+name) #You can determine another password here.
+password_field.send_keys(123@'+name) #You can determine another password here.
 
 Set buttons = browser.Document.GetElementsByTagName("button")
 
